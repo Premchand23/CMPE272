@@ -31,6 +31,7 @@
                         <li class="nav-item"><a class="nav-link" href="#services">Servcies</a></li>
                         <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#admin">Admin</a></li>
                     </ul>
                 </div>
             </div>
@@ -57,6 +58,7 @@
                         <h2 class="text-white mb-4">Your auto care specialist!</h2>
                         <p class="text-white-50">
                             We are your local auto care specialist and provide the best care your car deserves.
+                            <!--<a href="https://startbootstrap.com/theme/grayscale/">the preview page.</a>-->
                             Trust us with you autocare and live without worries. 
                         </p>
                     </div>
@@ -145,12 +147,14 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5">
                     <?php foreach ($contact_arr as $contact) : ?>
-                    <?php                        
+                    <?php
+                        
                         $string_arr= preg_split ("/\;/", $contact);
                         $name = $string_arr[0];
                         $post = $string_arr[1];
                         $phone = $string_arr[2];
                         $email = $string_arr[3];
+                    
                     ?>
                     <div class="col-md-4 mb-3 mb-md-1">
                         <div class="card py-4 h-100">
@@ -174,6 +178,22 @@
                 </div>
             </div>
         </section>
+        <section class="admin-section" id="admin">
+            <div class="login"> 
+            <h1>Login</h1>
+            <form action="authenticate.php" method="post">
+                <label for="username">
+                    <i class="fas fa-user"></i>
+                </label>
+                <input type="text" name="username" placeholder="Username" id="username" required>
+                <label for="password">
+                    <i class="fas fa-lock"></i>
+                </label>
+                <input type="password" name="password" placeholder="Password" id="password" required>
+                <input type="submit" value="Login">
+            </form>
+        </div> 
+        </section>
         <!-- Footer-->
         <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; PremchandJ 2021</div></footer\>
         <a href="https://www.freepik.com/photos/car">Car photo created by azerbaijan_stockers - www.freepik.com</a>
@@ -185,6 +205,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
