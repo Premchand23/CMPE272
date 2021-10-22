@@ -28,9 +28,10 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Servcies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#user">Users</a></li>
                         <li class="nav-item"><a class="nav-link" href="#admin">Admin</a></li>
                     </ul>
                 </div>
@@ -178,6 +179,69 @@
                 </div>
             </div>
         </section>
+        <section class="user-section" id="user">
+            <div class="user"> 
+            <h1>Add Users</h1>
+            <form action="addusers.php" method="post">
+                <div>
+                <label for="firstname">
+                    <!--<i class="fas fa-user"></i>-->
+                </label>
+                <input type="text" name="firstname" placeholder="First Name" id="firstname" required>
+                </div>
+                <div>
+                <label for="lastname">
+                    <!--<i class="fas fa-lock"></i>-->
+                </label>
+                <input type="text" name="lastname" placeholder="Last Name" id="lastname" required>
+                </div>
+                <div>
+                <label for="email">
+                    <!--<i class="fas fa-lock"></i>-->
+                </label>
+                <input type="text" name="email" placeholder="Email" id="email" required>
+                </div>
+                <div>
+                <label for="address">
+                    <!--<i class="fas fa-lock"></i>-->
+                </label>
+                <input type="text" name="address" placeholder="Home Address" id="address" required>
+                </div>
+                <div>
+                <label for="phone">
+                    <!--<i class="fas fa-lock"></i>-->
+                </label>
+                <input type="text" name="phone" placeholder="Home Phone" id="phone" required>
+                </div>
+                <div>
+                <label for="cell">
+                    <!--<i class="fas fa-lock"></i>-->
+                </label>
+                <input type="text" name="cell" placeholder="Cell Phone" id="cell" required>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit</button> 
+            </form>
+            <h1>Search for Users</h1>
+            <form action="search.php" method="post">
+                <div>
+                    <select name = "select">
+                        <option selected ="selected"> Select field to display: </option>
+                        <option value='firstname'> First Name </option>
+                        <option value='lastname'> Last Name </option>
+                        <option value='email'> Email </option>
+                        <option value='address'> Home Address </option>
+                        <option value='phone'> Home Phone </option>
+                        <option value='cell'> Cell Phone </option>
+                    </select>
+                </div>
+                <div>
+                <input type="text" name="searchtext" placeholder="Search value" required>
+                </div>
+                <button class="btn btn-primary" type="submit">Search</button>        
+            </form>
+            <br/>
+            </div>
+        </section>         
         <section class="admin-section" id="admin">
             <div class="login"> 
             <h1>Login</h1>
