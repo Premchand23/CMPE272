@@ -27,6 +27,6 @@ $query = "INSERT INTO user_details (firstname,lastname,email,address,phone,cell)
 
 if( !mysqli_query($con,$query)){
 	exit("Query Not Executed");
-}else exit("Record Added")
+}else exit("User Created")
 
 ?>

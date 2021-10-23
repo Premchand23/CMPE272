@@ -181,7 +181,7 @@
         </section>
         <section class="user-section" id="user">
             <div class="user"> 
-            <h1>Add Users</h1>
+            <h1>Create Users</h1>
             <form action="addusers.php" method="post">
                 <div>
                 <label for="firstname">
