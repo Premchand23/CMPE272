@@ -75,11 +75,17 @@
                     <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/car2.jpg" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>General Car Care</h4>
-                            <p class="text-black-50 mb-0">Our services include full-service preventative maintenance and auto repair, providing comprehensive car care services for your domestic or import vehicle to keep it running at full power. We offer all of the standard services you would expect to protect your safety and the lifespan of your car.</p>
+                            <h4>Expert Repair Servcies</h4>
+                            <ul>
+                                <li class="text-black-50 mb-0"><a href="gr.php">General Repair(Domestic)</a></li>
+                                <li class="text-black-50 mb-0"><a href="gir.php">General Repair(Imported)</a></li>
+                                <li class="text-black-50 mb-0"><a href="orr.php">Off-Road Vehicle Repair</a></li>
+                                <li class="text-black-50 mb-0"><a href="ur.php">Undercar Repair</a></li>
+                                <li class="text-black-50 mb-0"><a href="cs.php">Colling System services</a></li>
+                            </ul>  
                         </div>
                     </div>
-                </div>
+                </div>   
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/car3.jpg" alt="..." /></div>
@@ -88,8 +94,15 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">Expert Repair Servcies</h4>
-                                    <p class="mb-0 text-white-50">General Repair(Domesti and Import), Off-Road Vehicle Repair, Undercar Repair, Colling System services, A/C service, Manufacturer's recommended Maintanence, Transmission Servcies, Towing, and more...</p>
+                                    <ul>
+                                        <li class="mb-0 text-white-50"><a href="as.php">A/C service</a></li>
+                                        <li class="mb-0 text-white-50"><a href="mrm.php">Manufacturer's recommended Maintanence</a></li> 
+                                        <li class="mb-0 text-white-50"><a href="ts.php">Transmission Servcies</a></li>
+                                        <li class="mb-0 text-white-50"><a href="tow.php">Towing</a></li>
+                                        <li class="mb-0 text-white-50"><a href="ms.php">Miscellaneous Servcies</a></li>
+                                    </ul>    
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
+                                    <p class="mb-0 text-white-50">Click <a href="readcookies.php">here</a> for the last 5 visted pages</p>
                                 </div>
                             </div>
                         </div>
