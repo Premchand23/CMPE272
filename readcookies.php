@@ -19,9 +19,11 @@
     	<p> The 5 previously viewed services are as folows</p>
     	<table border ="1" cellpadding="3" cellspacing="2">
     		<?php
-    			$lastviewed = array_slice($_COOKIE, -5);
-    			foreach ($lastviewed as $key => $value) { 
-    				print("<tr><td>$key</td><td>$value</td></tr>");
+    			$lastviewed = json_decode(stripslashes($_COOKIE["lastvisited"]), true);
+    			foreach ($lastviewed as $key => $value) {
+                    $data = (object) json_decode(stripslashes($_COOKIE[$value]));
+                    print("<tr><th>Service</th><th>Name of the service</th>");
+    				print("<tr><td>$value</td><td><a href=\"$data->link\">$data->name</a></td></tr>"); 
     			} 
     		?>
     	</table>

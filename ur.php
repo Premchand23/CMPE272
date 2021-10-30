@@ -2,12 +2,36 @@
 
 extract($_POST);
 
+$serviceId = "service4";
 $service = "Under Car Repair";
 
-setcookie("Service4", $service, time()-3600);
+// set link and visit count
+if(!isset($_COOKIE[$serviceId])) {
+    $value = array( "link" => '', "visits" => '', "name" => $service);
+} else {
+    $value = json_decode(stripslashes($_COOKIE[$serviceId]), true);
+}
+$value['link'] = $_SERVER['REQUEST_URI'];
+if(empty($value['visits'])) {
+    $count = 1;
+} else {
+    $count = $value['visits'] + 1;
+}
+$value['visits'] = $count;
+setcookie($serviceId, json_encode($value));
 
-setcookie("Service4", $service, time()+3600*24*7);
-
+// add to last visited
+if(!isset($_COOKIE[$serviceId])) {
+    $value = array();
+} else {
+   $value = json_decode(stripslashes($_COOKIE["lastvisited"]), true);
+}
+foreach (array_keys($value, $serviceId, true) as $key) {
+    unset($value[$key]);
+}
+array_push($value, $serviceId);
+$value = array_splice($value, -5);
+setcookie("lastvisited", json_encode($value), time()+3600*24*7);
 ?>
 
 <!DOCTYPE html>
