@@ -11764,6 +11764,9 @@ body {
     border-radius: 5px;
     border: 1px solid black;
 }
+.user-section p {
+    text-align: center;
+}
 /*.user-section form button{
   width: 250px;
   padding: 10px;

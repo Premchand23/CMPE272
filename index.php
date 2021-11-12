@@ -254,6 +254,7 @@
                 <button class="btn btn-primary" type="submit">Search</button>        
             </form>
             <br/>
+            <p class="mb-0 text-white-50">Click <a href="userlist.php">here</a> for the list of all users</p>
             </div>
         </section>         
         <section class="admin-section" id="admin">
