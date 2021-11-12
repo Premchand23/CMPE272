@@ -23,6 +23,7 @@
 		$ch = curl_init ("http://premchandj.xyz/mostviewed.php");
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		$page = curl_exec($ch);
+		print("curl is done");
 
 		$dom = new DOMDocument();
 		libxml_use_internal_errors(true);
