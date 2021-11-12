@@ -41,18 +41,18 @@
     		$data[$row] = array_values(array_filter($data[$row]));
 		}
 
-		echo '<pre>';
+		print("<pre>");
 		// print_r($data);
 
-		echo "<table style='margin-left: 35%;'";
+		print("<table style='margin-left: 35%;'");
 		foreach($data as $key=>$row) {
-    		echo "<tr>";
+    		print("<tr>");
     		foreach($row as $key2=>$row2){
-        		echo "<td>" . $row2 . "</td>";
+        		print("<td>" . $row2 . "</td>");
     		}
-    		echo "</tr>";
+    		print("</tr>");
 		}
-		echo "</table>";
+		print("</table>");
 
 		curl_close($ch);
 		?>
