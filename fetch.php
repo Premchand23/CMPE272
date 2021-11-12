@@ -20,41 +20,10 @@
 		<?php
 
 		
-		$ch = curl_init ("http://premchandj.xyz/mostviewed.php");
+		$ch = curl_init ("http://monicamandapati.live/myusers.php");
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		$page = curl_exec($ch);
-		print("curl is done");
-
-		$dom = new DOMDocument();
-		libxml_use_internal_errors(true);
-		$dom->loadHTML($page);
-		libxml_clear_errors();
-		$xpath = new DOMXpath($dom);
-
-		$data = array();
-		// get all table rows and rows which are not headers
-		$table_rows = $xpath->query('//table/tr');		
-		foreach($table_rows as $row => $tr) {
-    		foreach($tr->childNodes as $td) {
-        		$data[$row][] = preg_replace('~[\r\n]+~', '', trim($td->nodeValue));
-    		}
-    		$data[$row] = array_values(array_filter($data[$row]));
-		}
-
-		print("<pre>");
-		// print_r($data);
-
-		print("<table style='margin-left: 35%;'");
-		foreach($data as $key=>$row) {
-    		print("<tr>");
-    		foreach($row as $key2=>$row2){
-        		print("<td>" . $row2 . "</td>");
-    		}
-    		print("</tr>");
-		}
-		print("</table>");
-
-		curl_close($ch);
+		print($page);
 		?>
 		<!--<h1>List of Users</h1><br/><br/>
 		<table border ="1" cellpadding="3" cellspacing="2">
