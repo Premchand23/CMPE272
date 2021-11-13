@@ -112,13 +112,14 @@
 		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 		curl_setopt($ch, CURLOPT_POST, 1);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $postinfo);
-		curl_exec($ch);
+		$page = curl_exec($ch);
+		print($page);
 
 		//page with the content I want to grab
-		curl_setopt($ch, CURLOPT_URL, "http://guruvardhan.works/272/users.php");
+		/**curl_setopt($ch, CURLOPT_URL, "http://guruvardhan.works/272/users.php");
 		//do stuff with the info with DomDocument() etc
 		$html = curl_exec($ch);
-		print($html);
+		print($html);**/
 		curl_close($ch);
 		?>
 		<br/>	
