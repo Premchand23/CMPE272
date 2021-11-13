@@ -17,6 +17,7 @@
     </head>
     <body>  
     	<h1>List of Users</h1><br/><br/>
+    	<div>
     	<p> The user from our company </p>
     	<?php
 		session_start();
@@ -82,6 +83,6 @@
 		$page = curl_exec($ch);
 		print($page);
 		?>
-		<br/>	
+		</div>	
 	</body>
 </html>	
