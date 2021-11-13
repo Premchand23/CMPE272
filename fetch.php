@@ -17,8 +17,8 @@
     </head>
     <body>  
     	<h1>List of Users</h1><br/><br/>
-    	<div>
-    		<div>
+    	<div style="padding-left: 1%;">
+    		<div >
 				<h3> The user from our company </h3>
 		    	<?php
 				session_start();
@@ -85,8 +85,8 @@
 				<br/>
 			</div>
 			<hr>
-			<div style="position: relative; width: 100%; height:100%; margin-top: 15%;">	
-				<h3> Users from http://guruvardhan.works/272/ </h3>  
+			<h3> Users from http://guruvardhan.works/272/ </h3>  
+			<div style="position: relative; width: 100%; height:100%; margin-top: 15%; margin-left: -35%;">	
 				<?php
 				$ch = curl_init ("http://guruvardhan.works/272/getUsers.php");
 				curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
