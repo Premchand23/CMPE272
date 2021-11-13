@@ -90,7 +90,7 @@
 
 		//login form action url
 		$url="http://guruvardhan.works/272/login.html"; 
-		$postinfo = "email=".$username."&password=".$password;
+		$postinfo = "username=".$username."&password=".$password;
 
 		
 		$ch = curl_init();
