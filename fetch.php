@@ -19,7 +19,7 @@
     	<h1>List of Users</h1><br/><br/>
     	<div>
     		<div>
-				<p> The user from our company </p>
+				<h3> The user from our company </h3>
 		    	<?php
 				session_start();
 				// Change this to your connection info.
@@ -62,8 +62,9 @@
 				</table>
 				<br/>
 			</div>
+			<hr>
 			<div>
-    			<p> Users from http://monicamandapati.live/ </p>  
+    			<h3> Users from http://monicamandapati.live/ </h3>  
 				<?php
 				$ch = curl_init ("http://monicamandapati.live/myusers.php");
 				curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -72,8 +73,9 @@
 				?>
 				<br/>
 			</div>
+			<hr>
 			<div>
-				<p> Users from http://annapurnaananya.tech/ </p>  
+				<h3> Users from http://annapurnaananya.tech/ </h3>  
 				<?php
 				$ch = curl_init ("http://annapurnaananya.tech/ananyaUsers.php");
 				curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -82,8 +84,9 @@
 				?>
 				<br/>
 			</div>
-			<div>	
-				<p> Users from http://guruvardhan.works/272/ </p>  
+			<hr>
+			<div style="position: relative; width: 100%; height:100%; margin-top: 15%;">	
+				<h3> Users from http://guruvardhan.works/272/ </h3>  
 				<?php
 				$ch = curl_init ("http://guruvardhan.works/272/getUsers.php");
 				curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
