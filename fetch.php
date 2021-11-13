@@ -16,6 +16,7 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>  
+    	<h1>List of Users</h1><br/><br/>
     	<p> The user from our company </p>
     	<?php
 		session_start();
@@ -43,7 +44,6 @@
 			die("Could not execute the query");
 		}
 		?>
-		<h1>List of Users</h1><br/><br/>
 		<table border ="1" cellpadding="3" cellspacing="2">
 			<?php
 				print("<tr><th>ID</th><th>First Name</th><th>Last Name</th><th>Email</th><th>Home Address</th><th>Home Phone</th><th>Cell Phone</th></tr>");
@@ -74,6 +74,16 @@
 
 		
 		$ch = curl_init ("http://annapurnaananya.tech/ananyaUsers.php");
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		$page = curl_exec($ch);
+		print($page);
+		?>
+		<br/>
+		<p> Users from http://guruvardhan.works/272/ </p>  
+		<?php
+
+		
+		$ch = curl_init ("http://guruvardhan.works/272/users.php");
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		$page = curl_exec($ch);
 		print($page);
