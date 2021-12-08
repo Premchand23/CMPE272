@@ -33,6 +33,7 @@
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" href="#user">Users</a></li>
                         <li class="nav-item"><a class="nav-link" href="#admin">Admin</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#mostviewed">Most Viewed</a></li>
                     </ul>
                 </div>
             </div>
@@ -274,6 +275,16 @@
             </form>
         </div> 
         </section>
+        <section class="mostviewed-section" id="mostviewed">
+            <div class="mostviewed">
+                <h4> Most viewed from Users from http://annapurnaananya.tech/ </h4>
+                <?php
+                $ch = curl_init ("http://annapurnaananya.tech/recent.php");
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                $page = curl_exec($ch);
+                print($page);
+            ?>
+            <br/>
         <!-- Footer-->
         <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; PremchandJ 2021</div></footer\>
         <a href="https://www.freepik.com/photos/car">Car photo created by azerbaijan_stockers - www.freepik.com</a>
