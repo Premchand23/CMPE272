@@ -276,15 +276,7 @@
         </div> 
         </section>
         <section class="mostviewed-section" id="mostviewed">
-            <div class="mostviewed">
-                <h4> Most viewed from Users from http://annapurnaananya.tech/ </h4>
-                <?php
-                $ch = curl_init ("http://annapurnaananya.tech/recent.php");
-                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                $page = curl_exec($ch);
-                print($page);
-            ?>
-            <br/>
+              <p class="mb-0 text-white-50">Click <a href="mpcurl.php">here</a> for the most viewed services</p>
         <!-- Footer-->
         <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; PremchandJ 2021</div></footer\>
         <a href="https://www.freepik.com/photos/car">Car photo created by azerbaijan_stockers - www.freepik.com</a>
