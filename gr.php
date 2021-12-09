@@ -21,7 +21,7 @@ $value['visits'] = $count;
 setcookie($serviceId, json_encode($value));
 
 // add to last visited
-if(!isset($_COOKIE[$serviceId])) {
+if(!isset($_COOKIE["lastvisited"])) {
     $value = array();
 } else {
    $value = json_decode(stripslashes($_COOKIE["lastvisited"]), true);
