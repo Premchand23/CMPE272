@@ -15,5 +15,5 @@ die();
   if($connd->query($sql) === TRUE){
     header("Location: index.php");
   } else {
-    header("Location: rating.php");
+    header("Location: index.php");
   }
