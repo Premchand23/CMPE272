@@ -308,13 +308,13 @@
 
                 <?php
             //session_start();
-                $con = mysqli_connect("localhost","root","Leclerc@01","rating");
+                $con = mysqli_connect("database272.c5madrxjubxj.us-east-2.rds.amazonaws.com","root","password","db272");
                 if (mysqli_connect_errno()){
                     echo "Failed to connect to MySQL: " . mysqli_connect_error();
                     die();
                 }
 
-                $sql="SELECT AVG(rating) AS average,product FROM `rateservices` GROUP BY product ORDER BY average DESC";
+                $sql="SELECT AVG(ratings) AS average,productid FROM `rateservices` GROUP BY productid ORDER BY average DESC limit 5";
 
                 $result = mysqli_query($con,$sql);
                 $row = mysqli_fetch_row($result);
