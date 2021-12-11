@@ -35,12 +35,12 @@ setcookie("lastvisited", json_encode($value), time()+3600*24*7);
 
 $connd = mysqli_connect("database272.c5madrxjubxj.us-east-2.rds.amazonaws.com","root","password","db272");
 if ($connd){
-
 $companyid = "premchandj auto";
 $productid = "Manufacturer's recommended Maintanence";
 $sql="INSERT INTO tracking (productid,companyid) VALUES ('".$productid."','".$companyid."')";
 
 mysqli_query($connd,$sql);
+
 }
 ?>
 
