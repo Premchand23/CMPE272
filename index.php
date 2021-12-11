@@ -314,7 +314,7 @@
                     die();
                 }
 
-                $sql="SELECT AVG(ratings) AS average,productid FROM `rateservices` GROUP BY productid ORDER BY average DESC limit 5";
+                $sql="SELECT AVG(ratings) AS average,productid FROM ratings WHERE companyid='premchandj auto' GROUP BY productid ORDER BY average DESC limit 5";
 
                 $result = mysqli_query($con,$sql);
                 $row = mysqli_fetch_row($result);

@@ -34,15 +34,15 @@ $value = array_splice($value, -5);
 setcookie("lastvisited", json_encode($value), time()+3600*24*7);
 
 $connd = mysqli_connect("database272.c5madrxjubxj.us-east-2.rds.amazonaws.com","root","password","db272");
-if (mysqli_connect_errno()){
-echo "Failed to connect to MySQL: " . mysqli_connect_error();
-die();
+if ($connd){
 
 companyid = "premchandj auto";
 $productid = "Towing";
 $sql="INSERT INTO tracking (productid,companyid) VALUES ('".$productid."','".$company_id."')";
 
 mysqli_query($connd,$sql);
+
+}
 
 ?>
 
