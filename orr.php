@@ -32,6 +32,9 @@ foreach (array_keys($value, $serviceId, true) as $key) {
 array_push($value, $serviceId);
 $value = array_splice($value, -5);
 setcookie("lastvisited", json_encode($value), time()+3600*24*7);
+companyid = "premchandj auto";
+$productid = "Off Road Vehicle Repair";
+$sql="INSERT INTO tracking (productid,companyid) VALUES ('".$productid."','".$company_id."')";
 ?>
 
 <!DOCTYPE html>
