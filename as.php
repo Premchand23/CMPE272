@@ -42,6 +42,8 @@ $companyid = "premchandj auto";
 $productid = "A/C Service";
 $sql="INSERT INTO tracking (productid,companyid) VALUES ('".$productid."','".$company_id."')";
 
+mysqli_query($connd,$sql);
+
 
 ?>
 
