@@ -38,7 +38,7 @@ if ($connd){
 
 $companyid = "premchandj auto";
 $productid = "Miscellaneous Services";
-$sql="INSERT INTO tracking (productid,companyid) VALUES ('".$productid."','".$company_id."')";
+$sql="INSERT INTO tracking (productid,companyid) VALUES ('".$productid."','".$companyid."')";
 
 mysqli_query($connd,$sql);
 

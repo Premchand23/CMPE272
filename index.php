@@ -102,9 +102,9 @@
                                     <li class="mb-0 text-white-50"><a href="tow.php">Towing</a></li>
                                     <li class="mb-0 text-white-50"><a href="ms.php">Miscellaneous Servcies</a></li>
                                 </ul>    
-                                <hr class="d-none d-lg-block mb-0 ms-0" />
+                                <!--<hr class="d-none d-lg-block mb-0 ms-0" />
                                 <p class="mb-0 text-white-50">Click <a href="rating.php">here</a> to rate our services</p>
-                                <p class="mb-0 text-white-50">Click <a href="toprating.php">here</a> to view top rated services</p>
+                                <p class="mb-0 text-white-50">Click <a href="toprating.php">here</a> to view top rated services</p> -->
                                 <p class="mb-0 text-white-50">Click <a href="readcookies.php">here</a> for the last 5 visted services</p>
                                 <p class="mb-0 text-white-50">Click <a href="mostviewed.php">here</a> for the most visted visted services</p>
                             </div>
