@@ -94,13 +94,13 @@
                     <div class="bg-black text-center h-100 project">
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <h4 class="text-white">Expert Repair Servcies</h4>
+                                <h4 class="text-white">Expert Repair Services</h4>
                                 <ul>
                                     <li class="mb-0 text-white-50"><a href="as.php">A/C service</a></li>
                                     <li class="mb-0 text-white-50"><a href="mrm.php">Manufacturer's recommended Maintanence</a></li> 
-                                    <li class="mb-0 text-white-50"><a href="ts.php">Transmission Servcies</a></li>
+                                    <li class="mb-0 text-white-50"><a href="ts.php">Transmission Services</a></li>
                                     <li class="mb-0 text-white-50"><a href="tow.php">Towing</a></li>
-                                    <li class="mb-0 text-white-50"><a href="ms.php">Miscellaneous Servcies</a></li>
+                                    <li class="mb-0 text-white-50"><a href="ms.php">Miscellaneous Services</a></li>
                                 </ul>    
                                 <!--<hr class="d-none d-lg-block mb-0 ms-0" />
                                 <p class="mb-0 text-white-50">Click <a href="rating.php">here</a> to rate our services</p>
@@ -288,7 +288,7 @@
                         <option value="General Repair(Imported)" name="General Repair(Imported)">General Repair(Imported)</option>
                         <option value="Off-Road Vehicle Repair" name="Off-Road Vehicle Repair">Off-Road Vehicle Repair</option>
                         <option value="Undercar Repair" name="Undercar Repair">Undercar Repair</option>
-                        <option value="Colling System services" name="Colling System services">Colling System services</option>
+                        <option value="Colling System services" name="Colling System services">Coolant System services</option>
                         <option value="A/C service" name="A/C service">A/C service</option>
                         <option value="Manufacturer's recommended Maintanence" name="Manufacturer's recommended Maintanence">Manufacturer's recommended Maintanence</option>
                         <option value="Transmission Servcies" name="Transmission Servcies">Transmission Servcies</option>
@@ -314,7 +314,7 @@
                     die();
                 }
 
-                $sql="SELECT AVG(ratings) AS average,productid FROM ratings WHERE companyid='premchandj auto' GROUP BY productid ORDER BY average DESC limit 5";
+                $sql="SELECT AVG(ratings) AS average,productid FROM ratings WHERE companyid='premchandj auto' GROUP BY productid ORDER BY average DESC limit 6";
 
                 $result = mysqli_query($con,$sql);
                 $row = mysqli_fetch_row($result);
@@ -342,7 +342,7 @@
                     die();
                 }
 
-                $sql1="SELECT review,productid FROM ratings WHERE companyid='premchandj auto' AND ratings > 3 limit 5";
+                $sql1="SELECT review,productid FROM ratings WHERE companyid='premchandj auto' AND ratings > 3 limit 6";
 
                 $result1 = mysqli_query($con1,$sql1);
                 $row1 = mysqli_fetch_row($result1);
