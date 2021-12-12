@@ -329,7 +329,7 @@
                     <?php
                     print("<tr><th>Product</th><th>Rating</th></tr>");
                     while ($row = mysqli_fetch_row($result)) {
-                      print("<tr><th>$row[0]</th><th>$row[1]");
+                      print("<tr><td>$row[0]</td><td>$row[1]</td></tr>");
                   }
                   ?>
                 </table>
@@ -359,7 +359,7 @@
                     <?php
                     print("<tr><th>Product</th><th>Review</th></tr>");
                     while ($row1 = mysqli_fetch_row($result1)) {
-                      print("<tr><th>$row1[0]</th><th>$row1[1]");
+                      print("<tr><td>$row1[0]</td><td>$row1[1]</td></tr>");
 
 
                   }
