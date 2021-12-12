@@ -346,8 +346,8 @@
 
                 $result1 = mysqli_query($con1,$sql1);
                 $row1 = mysqli_fetch_row($result1);
-                print(row1);
-                print(result1);
+                print($row1);
+                print($result1);
 
                 if (!$result){
                     die("Could not execute the query");
