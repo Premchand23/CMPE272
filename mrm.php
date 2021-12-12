@@ -33,7 +33,7 @@ array_push($value, $serviceId);
 $value = array_splice($value, -5);
 setcookie("lastvisited", json_encode($value), time()+3600*24*7);
 
-$connd = mysqli_connect("database272.c5madrxjubxj.us-east-2.rds.amazonaws.com","root","password","db272");
+$connd = mysqli_connect("database272.c4otieem7r39.us-east-2.rds.amazonaws.com","admin","Rogerfederer","db272");
 if ($connd){
 $companyid = "premchandj auto";
 $productid = "Manufacturer's recommended Maintanence";

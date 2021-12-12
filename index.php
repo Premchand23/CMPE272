@@ -308,8 +308,8 @@
 
                 <?php
             //session_start();
-                $con = mysqli_connect("database272.c5madrxjubxj.us-east-2.rds.amazonaws.com","root","password","db272");
-                if (mysqli_connect_errno()){
+                $con = mysqli_connect("database272.c4otieem7r39.us-east-2.rds.amazonaws.com","admin","Rogerfederer","db272");
+                if(mysqli_connect_errno()){
                     echo "Failed to connect to MySQL: " . mysqli_connect_error();
                     die();
                 }
@@ -336,7 +336,7 @@
 
                 <?php
 
-                $con1 = mysqli_connect("database272.c5madrxjubxj.us-east-2.rds.amazonaws.com","root","password","db272");
+                $con1 = mysqli_connect("database272.c4otieem7r39.us-east-2.rds.amazonaws.com","admin","Rogerfederer","db272");
                 if (mysqli_connect_errno()){
                     echo "Failed to connect to MySQL: " . mysqli_connect_error();
                     die();
