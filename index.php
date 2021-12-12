@@ -342,14 +342,12 @@
                     die();
                 }
 
-                $sql1="SELECT review,productid FROM ratings WHERE companyid='premchandj auto' AND rating > 3 limit 5";
+                $sql1="SELECT review,productid FROM ratings WHERE companyid='premchandj auto' AND ratings > 3 limit 5";
 
                 $result1 = mysqli_query($con1,$sql1);
                 $row1 = mysqli_fetch_row($result1);
-                print($row1);
-                print($result1);
 
-                if (!$result){
+                if (!$result1){
                     die("Could not execute the query");
                 }
                 ?>
@@ -360,8 +358,6 @@
                     print("<tr><th>Product</th><th>Review</th></tr>");
                     while ($row1 = mysqli_fetch_row($result1)) {
                       print("<tr><td>$row1[0]</td><td>$row1[1]</td></tr>");
-
-
                   }
                   ?>
               </table>
