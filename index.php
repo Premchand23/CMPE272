@@ -330,6 +330,26 @@
                     print("<tr><th>Product</th><th>Rating</th></tr>");
                     while ($row = mysqli_fetch_row($result)) {
                       print("<tr><th>$row[0]</th><th>$row[1]");
+
+
+                $sql1="SELECT review,productid FROM ratings WHERE companyid='premchandj auto' AND rating > 3 limit 5";
+
+                $result1 = mysqli_query($con,$sql1);
+                $row1 = mysqli_fetch_row($result1);
+
+                if (!$result){
+                    die("Could not execute the query");
+                }
+                ?>
+
+                <h3 style="margin-left: 0.5%;">Top Rated Services</h3>
+                <table style="margin-left: 0.5%;" border ="1" cellpadding="3" cellspacing="2">
+                    <?php
+                    print("<tr><th>Product</th><th>Review</th></tr>");
+                    while ($row1 = mysqli_fetch_row($result)) {
+                      print("<tr><th>$row[0]</th><th>$row[1]");
+
+
                   }
                   ?>
               </table>
