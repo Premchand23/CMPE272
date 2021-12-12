@@ -324,7 +324,7 @@
                 }
                 ?>
 
-                <h3 style="margin-left: 0.5%;">Most Populat</h3>
+                <h3 style="margin-left: 0.5%;">Top Rated Services</h3>
                 <table style="margin-left: 0.5%;" border ="1" cellpadding="3" cellspacing="2">
                     <?php
                     print("<tr><th>Product</th><th>Rating</th></tr>");
@@ -332,27 +332,29 @@
                       print("<tr><th>$row[0]</th><th>$row[1]");
                   }
                   ?>
-                  </table>
+                </table>
 
                 <?php
 
-                $con = mysqli_connect("database272.c5madrxjubxj.us-east-2.rds.amazonaws.com","root","password","db272");
+                $con1 = mysqli_connect("database272.c5madrxjubxj.us-east-2.rds.amazonaws.com","root","password","db272");
                 if (mysqli_connect_errno()){
                     echo "Failed to connect to MySQL: " . mysqli_connect_error();
                     die();
                 }
-                
+
                 $sql1="SELECT review,productid FROM ratings WHERE companyid='premchandj auto' AND rating > 3 limit 5";
 
-                $result1 = mysqli_query($con,$sql1);
+                $result1 = mysqli_query($con1,$sql1);
                 $row1 = mysqli_fetch_row($result1);
+                print(row1);
+                print(result1);
 
                 if (!$result){
                     die("Could not execute the query");
                 }
                 ?>
 
-                <h3 style="margin-left: 0.5%;">Top Rated Services</h3>
+                <h3 style="margin-left: 0.5%;">Most Popluar Reviews</h3>
                 <table style="margin-left: 0.5%;" border ="1" cellpadding="3" cellspacing="2">
                     <?php
                     print("<tr><th>Product</th><th>Review</th></tr>");
